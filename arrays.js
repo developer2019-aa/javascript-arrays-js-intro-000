@@ -6,7 +6,7 @@ function addElementToBeginningOfArray(arr, element) {
 }
 
 function destructivelyAddElementToBeginningOfArray(arr, element) {
-  let newArr = arr.slice();
+  let newArr = arr;
   newArr.unshift(element);
   return newArr;
 }
