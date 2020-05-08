@@ -5,41 +5,41 @@ function addElementToBeginningOfArray(arr, element) {
   return arr;
 }
 
-const destructivelyAddElementToBeginningOfArray = (arr, element) => {
+function destructivelyAddElementToBeginningOfArray(arr, element) {
   let newArr = arr;
   newArr.unshift(element);
   newArr;
 }
 
-const addElementToEndOfArray = (arr, element) => {
+function addElementToEndOfArray (arr, element){
   let newArr = arr;
   newArr.push(element);
   return newArr;
 }
 
-const destructivelyAddElementToEndOfArray = (arr, element) => {
+function destructivelyAddElementToEndOfArray(arr, element) {
   arr.push(element);
   return arr;
 }
 
-const accessElementInArray = (arr, idx) => {
+function accessElementInArray(arr, idx) {
   return arr[idx];
 }
 
-const destructivelyRemoveElementFromBeginningOfArray = (arr) => {
+function destructivelyRemoveElementFromBeginningOfArray(arr) {
   arr.shift();
   return arr;
 }
 
-const removeElementFromBeginningOfArray = (arr) => {
+function removeElementFromBeginningOfArray(arr) {
   return arr.slice(1);
 }
 
-const destructivelyRemoveElementFromEndOfArray = (arr) => {
+function destructivelyRemoveElementFromEndOfArray(arr) {
    arr.pop();
    return arr
 }
 
-const removeElementFromEndOfArray = (arr) => {
+function removeElementFromEndOfArray(arr) {
   return arr.slice(0, arr.length - 1);
 }
